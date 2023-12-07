@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login-Register Modal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            
+            <div class="col-lg-6 col-md-6 col-sm-12 text-center text-lg-end">
+                <!-- Register Button trigger modal -->
+                <div class="mt-3">
+                    <button type="button" class="btn bg-transparent text-body border border-1 border-dark"
+                        data-bs-toggle="modal" data-bs-target="#exampleRegisterModal">
+                        Register
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 text-center text-lg-start mb-3">
+                <!-- Login Button trigger modal -->
+                <div class="mt-3">
+                    <button type="button" class="btn bg-transparent text-body border border-1 border-dark"
+                        data-bs-toggle="modal" data-bs-target="#exampleLoginModal">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="exampleRegisterModal" tabindex="-1" aria-labelledby="exampleRegisterModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header border border-0">
+                    <h1 class="modal-title fs-5" id="exampleRegisterModalLabel">Register with</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-4 text-center mb-3">
+                            <img src="./img/github.png" class="img-fluid" alt="github-logo">
+                        </div>
+                        <div class="col-4 text-center mb-3">
+                            <img src="./img/google.png" class="img-fluid" alt="google-logo">
+                        </div>
+                        <div class="col-4 text-center mb-3">
+                            <img src="./img/facebook.png" class="img-fluid" alt="facebook-logo">
+                        </div>
+                    </div>                                                                             
+
+                    <div class="custom-hr">
+                        <hr>
+                        <span class="hr-text">or</span>
+                    </div>
+
+                    <div class="container px-2">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control mt-1" id="inputName" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control mt-2" id="inputPassword" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control mt-2" id="confPassword" placeholder="Repeat Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mt-2">CREATE ACCOUNT</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer border border-0 d-flex justify-content-center">
+                    <p class="text-center">Already have an account? <a href="#" class="px-1">Login</a></p>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="exampleLoginModal" tabindex="-1" aria-labelledby="exampleLoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header border border-0">
+                    <h1 class="modal-title fs-5" id="exampleLoginModalLabel">Login with</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-4 text-center mb-3">
+                            <img src="./img/github.png" class="img-fluid" alt="github-logo">
+                        </div>
+                        <div class="col-4 text-center mb-3">
+                            <img src="./img/google.png" class="img-fluid" alt="google-logo">
+                        </div>
+                        <div class="col-4 text-center mb-3">
+                            <img src="./img/facebook.png" class="img-fluid" alt="facebook-logo">
+                        </div>
+                    </div>                                                                             
+
+                    <div class="custom-hr">
+                        <hr>
+                        <span class="hr-text">or</span>
+                    </div>
+
+                    <div class="container px-2">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control mt-1" id="inputName" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control mt-2" id="inputPassword" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mt-2">LOGIN</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer border border-0 d-flex justify-content-center">
+                    <p class="text-center">Looking to <a href="#" class="px-1">create an account</a>?</p>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
